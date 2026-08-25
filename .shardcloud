@@ -1,0 +1,7 @@
+DISPLAY_NAME=Ateliê da Nay Personalizados
+DESCRIPTION=E-commerce de produtos personalizados (canecas, quadros, convites e lembrancinhas)
+LANGUAGE=node
+MEMORY=2048
+VERSION=recommended
+SUBDOMAIN=ateliedanay
+CUSTOM_COMMAND=corepack enable && pnpm install --frozen-lockfile --network-concurrency=4 && npm run build && npm start

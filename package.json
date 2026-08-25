@@ -1,0 +1,29 @@
+{
+  "name": "ateliedanay-personalizados",
+  "private": true,
+  "version": "0.1.0",
+  "main": "server.js",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w apps/api",
+    "dev:web": "npm run dev -w apps/web",
+    "start": "node server.js",
+    "build": "npm run build -w packages/shared && npm run build -w apps/api && npm run build -w apps/web",
+    "build:shared": "npm run build -w packages/shared",
+    "build:api": "npm run build -w apps/api",
+    "build:web": "npm run build -w apps/web",
+    "lint": "npm run lint -w apps/api && npm run lint -w apps/web",
+    "prisma:migrate": "npm run prisma:migrate -w apps/api",
+    "prisma:generate": "npm run prisma:generate -w apps/api",
+    "prisma:seed": "npm run prisma:seed -w apps/api",
+    "prisma:studio": "npm run prisma:studio -w apps/api"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@11.22.0+sha512.1ff870c4c6133dfd88fb2afc46dd13d47f09c9794b438c6fdb47ca98caf3bc16381ee0be93a091b8e3824cf01f889f46d7d9e20910fb0be1ab0fb5baa80dd621"
+}

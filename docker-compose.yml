@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ateliedanay
+      POSTGRES_PASSWORD: ateliedanay
+      POSTGRES_DB: ateliedanay
+    ports:
+      - "5432:5432"
+    volumes:
+      - ateliedanay_db_data:/var/lib/postgresql/data
+
+volumes:
+  ateliedanay_db_data:
