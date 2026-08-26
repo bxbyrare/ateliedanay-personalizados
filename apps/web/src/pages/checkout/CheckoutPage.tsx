@@ -64,7 +64,7 @@ export default function CheckoutPage() {
 
   if (placedOrder) {
     return (
-      <div className="py-20 text-center max-w-xl mx-auto px-4">
+      <div className="py-20 text-center max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="font-serif text-3xl font-bold text-stone-900 mb-2">Pedido Realizado!</h1>
         <p className="text-stone-500 text-sm mb-1">Pedido <span className="font-semibold text-[#8B0000]">#{placedOrder.orderNumber}</span></p>
         <p className="text-stone-500 text-sm mb-6">Total: {formatCents(placedOrder.totalCents)}</p>
@@ -79,7 +79,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div className="py-12 max-w-5xl mx-auto px-4">
+    <div className="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <Seo title="Finalizar Pedido" noIndex />
       <h1 className="font-serif text-3xl font-bold text-stone-900 mb-8">Finalizar Pedido</h1>
 

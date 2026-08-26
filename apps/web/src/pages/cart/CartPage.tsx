@@ -25,7 +25,7 @@ export default function CartPage() {
 
   if (lines.length === 0) {
     return (
-      <div className="py-20 text-center max-w-xl mx-auto px-4">
+      <div className="py-20 text-center max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="font-serif text-2xl font-bold text-stone-900 mb-2">Seu carrinho está vazio</h1>
         <p className="text-stone-500 text-sm mb-6">Explore nosso catálogo e encontre o mimo perfeito.</p>
         <Link to="/catalogo" className="bg-[#8B0000] hover:bg-[#6b0000] text-white px-6 py-3 rounded-lg text-sm font-semibold transition-all shadow-md">
@@ -36,7 +36,7 @@ export default function CartPage() {
   }
 
   return (
-    <div className="py-12 max-w-5xl mx-auto px-4">
+    <div className="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <Seo title="Carrinho" noIndex />
       <h1 className="font-serif text-3xl font-bold text-stone-900 mb-8">Seu Carrinho</h1>
 
