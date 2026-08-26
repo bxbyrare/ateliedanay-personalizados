@@ -113,11 +113,11 @@ export default function ProductPage() {
   const plainDescription = product.description?.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 
   return (
-    <div className="py-12 max-w-6xl mx-auto px-4">
+    <div className="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <Seo title={product.name} description={plainDescription} />
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-10 lg:gap-16">
         <div>
-          <div className="aspect-square bg-stone-100 rounded-xl overflow-hidden flex items-center justify-center border border-stone-200">
+          <div className="aspect-square bg-stone-100 rounded-xl overflow-hidden flex items-center justify-center">
             {image ? (
               <img src={productImageUrl(image.url)} alt={image.altText || product.name} className="w-full h-full object-cover" />
             ) : (

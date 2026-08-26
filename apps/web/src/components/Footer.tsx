@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-stone-900 text-stone-300 pt-12 border-t border-stone-800 text-sm">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-10">
         <div>
           <h3 className="font-serif text-xl font-bold text-white mb-3">Ateliê da Nay</h3>
           <p className="text-stone-400 text-xs leading-relaxed">
@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-stone-800 py-4 px-4">
+      <div className="border-t border-stone-800 py-4 px-4 sm:px-6 lg:px-8">
         <p className="max-w-7xl mx-auto text-[11px] text-stone-500 text-center">
           © {year} Ateliê da Nay Personalizados. Todos os direitos reservados.
         </p>
